@@ -1,8 +1,8 @@
 class Rewound < Formula
   desc "Grep for everything your AI coding agents ever did"
   homepage "https://github.com/Dashorama/rewound"
-  url "https://registry.npmjs.org/rewound/-/rewound-0.4.0.tgz"
-  sha256 "c5bde96cd101e7c43ff95f5a1faa66f20f8fb28c70f7c6190fac5f7f3deb9f42"
+  url "https://registry.npmjs.org/rewound/-/rewound-0.4.3.tgz"
+  sha256 "f6677b32375b14ec10be38e6356b6e4461bae41558efad101645b5cddfb61e50"
   license :cannot_represent # source-available: free for personal use, paid commercial — see repo LICENSE
 
   depends_on "node"
