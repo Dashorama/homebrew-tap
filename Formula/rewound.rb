@@ -1,14 +1,14 @@
 class Rewound < Formula
   desc "Grep for everything your AI coding agents ever did"
   homepage "https://github.com/Dashorama/rewound"
-  url "https://registry.npmjs.org/rewound/-/rewound-0.5.1.tgz"
-  sha256 "a37fde42db6641d6a22daf35748c505caa1f1baa612dc1668660f824a055f44f"
+  url "https://registry.npmjs.org/rewound/-/rewound-0.5.2.tgz"
+  sha256 "e43f77f735581cf346a0ee5e35f4281ff0bf7b100fb4d2975fc6d56edf9ca80c"
   license :cannot_represent # source-available: free for personal use, paid commercial — see repo LICENSE
 
   depends_on "node"
 
   def install
-    system "npm", "install", *std_npm_args
+    system "npm", "install", *std_npm_args(ignore_scripts: false) # better-sqlite3 needs its install script to fetch/build its native addon (rewound#4)
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
